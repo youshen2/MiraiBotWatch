@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page_bg">#000000</color>
+    <color name="tip_bg">#444444</color>
+    <color name="list_line">#333333</color>
+    <color name="list_bg">#802A2B2C</color>
+    <color name="font_pagetitle">#ff4dd865</color>
+    <color name="font_title">#ffffff</color>
+    <color name="font_subtitle">#333333</color>
+    <color name="font_describe">#999999</color>
+    <color name="font_error">#FF3737</color>
+    <color name="button_default">#242424</color>
+    <color name="button_pressed">#131313</color>
+    <color name="button_disabled">#121212</color>
+    <color name="button_toggle_default">#AA0808</color>
+    <color name="button_toggle_pressed">#9A0808</color>
+    <color name="button_toggle_checked_default">#3EBF45</color>
+    <color name="button_toggle_checked_pressed">#32A638</color>
+</resources>

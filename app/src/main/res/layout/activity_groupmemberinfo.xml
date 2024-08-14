@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".GroupMemberActivity">
+
+    <top.moye.miraibotwatch.DragableLauncher
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/activity_groupmemberinfo_launcher"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/page_bg"
+            tools:context=".AppActivity">
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/page_bg"
+            android:scrollbars="none"
+            tools:context=".AppActivity">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="成员详情"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="0dp"
+                        style="@style/PageTitle" />
+                    <TextView
+                        android:id="@+id/activity_groupmemberinfo_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textSize="14sp"
+                        android:text=""
+                        android:textColor="@color/font_title" />
+                    <TextView
+                        android:id="@+id/activity_groupmemberinfo_qqid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text=""
+                        android:textColor="@color/font_describe" />
+
+                    <TextView
+                        android:id="@+id/activity_groupmemberinfo_groupid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:text=""
+                        android:textColor="@color/font_describe" />
+                </LinearLayout>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/page_bg"
+            android:scrollbars="none"
+            tools:context=".AppActivity">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="管理成员"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="0dp"
+                        style="@style/PageTitle" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="禁言"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/font_title" />
+                    <EditText
+                        android:id="@+id/activity_groupmemberinfo_mute_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:maxLines="1"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:hint="输入禁言时间（分钟）"
+                        android:textColor="@color/font_title"
+                        android:padding="5dp"
+                        android:textColorHint="@color/font_describe"
+                        android:gravity="top"
+                        android:textSize="12dp"
+                        android:background="@color/list_bg" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/list_button"
+                        android:textColor="@color/font_title"
+                        android:text="禁言"
+                        android:onClick="_on_gm_mute_click"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/list_button"
+                        android:textColor="@color/font_title"
+                        android:text="取消禁言"
+                        android:onClick="_on_gm_unmute_click"/>
+                    <ToggleButton
+                        android:id="@+id/activity_groupmemberinfo_kick_toggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/list_toggle_button"
+                        android:textColor="@color/font_title"
+                        android:checked="false"
+                        android:textOn="踢出时加入黑名单"
+                        android:textOff="踢出时不加入黑名单" />
+                    <Button
+                        android:id="@+id/activity_groupmemberinfo_kick_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/list_button"
+                        android:textColor="@color/font_title"
+                        android:text="踢出本群"
+                        android:onClick="_on_gm_kick_click"/>
+                </LinearLayout>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </top.moye.miraibotwatch.DragableLauncher>
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40.0dip"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/activity_groupmemberinfo_status"
+            android:layout_width="wrap_content"
+            android:layout_height="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="-7dp"
+            android:src="@drawable/frame_1in2" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

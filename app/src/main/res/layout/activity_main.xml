@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bot服务器配置"
+                android:layout_marginTop="5dp"
+                style="@style/PageTitle" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="服务器地址"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/font_title" />
+            <EditText
+                android:id="@+id/main_hosturl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="在此处输入Bot的服务器地址"
+                android:maxLines="1"
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="服务器端口"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/font_title" />
+            <EditText
+                android:id="@+id/main_hostport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="在此处输入Bot的服务器端口"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="6"
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bot的QQ号"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/font_title" />
+            <EditText
+                android:id="@+id/main_botqq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:maxLines="1"
+                android:hint="在此处输入要绑定的Bot的QQ"
+                android:inputType="number"
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Session"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/font_title" />
+            <EditText
+                android:id="@+id/main_session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:maxLines="1"
+                android:hint="在此处输入连接用的Session"
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <TextView
+                android:id="@+id/main_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/font_error" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/list_button"
+                android:textColor="@color/font_title"
+                android:text="连接服务器"
+                android:onClick="_on_server_ok_click"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

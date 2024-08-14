@@ -1,0 +1,125 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/README.md",
+      "selection": {
+        "end": {
+          "column": 7,
+          "index": 121,
+          "line": 10
+        },
+        "start": {
+          "column": 7,
+          "index": 121,
+          "line": 10
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/app/build.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 70,
+          "index": 1091,
+          "line": 38
+        },
+        "start": {
+          "column": 70,
+          "index": 1091,
+          "line": 38
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/app/src/main/java/top/moye/miraibotwatch/MainActivity.java",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 36,
+          "index": 2618,
+          "line": 59
+        },
+        "start": {
+          "column": 36,
+          "index": 2618,
+          "line": 59
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/app/src/main/res/layout/activity_groupmemberinfo.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/app/src/main/res/layout/activity_groupmessage.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/app/src/main/res/layout/activity_groupnotice.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/app/src/main/res/layout/activity_app.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/miraibotwatch/README.md"
+}
